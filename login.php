@@ -14,7 +14,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    Login
+                    Login to continue
                 </div>
                 <div class="card-body">
                     <form action="login.php" method="post">
@@ -26,14 +26,9 @@
                             <label for="password">Password:</label>
                             <div class="input-group">
                                 <input type="password" class="form-control" id="password" name="password" required>
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="eye-icon">
-                                        <i class="fas fa-eye" aria-hidden="true" onclick="togglePasswordVisibility()"></i>
-                                    </span>
-                                </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary" style="text-align: center; " >Login</button>
                     </form>
                 </div>
             </div>

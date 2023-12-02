@@ -7,7 +7,7 @@
     <title>CNSC SFAU</title>
 </head>
 <body>
-    <header class="col-md-12" style="background-color: #c92020; color: white; text-align: left; padding: 10px;">
+    <header class="col-md-12" style="background-color: #9a0000; color: white; text-align: left; padding: 10px;">
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
              </button>
@@ -22,38 +22,12 @@
                     <?php include('sidebar.php'); ?>
                 </div>
             </nav>
-
-            <!-- Rest of your content -->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <h1>Welcome to Your Web App</h1>
             </main>
         </div>
     </div>
    </div>
-<div class="container mt-3">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Female Users</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Male Users</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Total Users</h5>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 
