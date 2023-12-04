@@ -13,17 +13,60 @@
     <?php
     // Your PHP code for server-side logic goes here
     $formData = [
-        'seq' => '',
-        'cntrlnum' => '',
-        'id' => '',
-        // ... other form data fields
+        'SEQ' => '',
+        'Control No.' => '',
+        'LAST NAME' => '',
+        'FIRST NAME'=> '',
+        'MIDDLE NAME' => '',
+        'SEX'=> '',
+        'BIRTHDATE'=> '',
+        'COURSE ENROLLED'=> '',
+        'YEAR LEVEL'=> '',
+        'HOUSEHOLD NO.	'=> '',
+        'PER CAPITA INCOME'=> '',
+        'STREET & BRGY.'=> '',
+        'TOWN'=> '',
+        'PROVINCE'=> '',
+        'ZIP CODE'=> '',
+        'TOTAL ASSESSMENT'=> '',
+        'GWA'=> '',
+        'DISABILITY'=> '',
+        'CONTACT NUMBER'=> '',
+        'EMAIL ADDRESS'=> '',
+        'SCHOALRSHIP/GRANT'=> '',
+        'COLLEGE/DEPARTMENT'=> '',
+        'REMARKS'=> '',
+        'STATUS'=> '',
+        'SCHOLARSHIP STATUS'=> '',
     ];
 
     $tableData = [
         [
-            'id' => '',
-            'seq' => '',
-            // ... other table data fields
+            'SEQ' => '',
+            'Control No.' => '',
+            'LAST NAME' => '',
+            'FIRST NAME'=> '',
+            'MIDDLE NAME' => '',
+            'SEX'=> '',
+            'BIRTHDATE'=> '',
+            'COURSE ENROLLED'=> '',
+            'YEAR LEVEL'=> '',
+            'HOUSEHOLD NO.	'=> '',
+            'PER CAPITA INCOME'=> '',
+            'STREET & BRGY.'=> '',
+            'TOWN'=> '',
+            'PROVINCE'=> '',
+            'ZIP CODE'=> '',
+            'TOTAL ASSESSMENT'=> '',
+            'GWA'=> '',
+            'DISABILITY'=> '',
+            'CONTACT NUMBER'=> '',
+            'EMAIL ADDRESS'=> '',
+            'SCHOALRSHIP/GRANT'=> '',
+            'COLLEGE/DEPARTMENT'=> '',
+            'REMARKS'=> '',
+            'STATUS'=> '',
+            'SCHOLARSHIP STATUS'=> '',
         ],
         // ... other rows
     ];
@@ -56,14 +99,69 @@
                 <thead>
                 <tr>
                     <th>SEQ</th>
-                    <!-- Repeat similar table headers -->
+                    <th>CONTROL NO.</th>
+                    <th>LAST NAME</th>
+                    <th>FIRST NAME</th>
+                    <th>MIDDLE NAME</th>
+                    <th>SEX</th>
+                    <th>BIRTHDATE</th>	
+                    <th>COURSE ENROLLED</th>	
+                    <th>YEAR LEVEL</th>	
+                    <th>HOUSEHOLD NO.</th>	
+                    <th>PER CAPITA INCOME</th>	
+                    <th>STREET & BRGY.</th>	
+                    <th>TOWN</th>	
+                    <th>PROVINCE</th>	
+                    <th>ZIP CODE</th>
+                    <th>TOTAL ASSESSMENT</th>	
+                    <th>GWA</th>	
+                    <th>DISABILITY</th>	
+                    <th>CONTACT NUMBER</th>	
+                    <th>EMAIL ADDRESS</th>	
+                    <th>SCHOALRSHIP/GRANT</th>	
+                    <th>COLLEGE/DEPARTMENT</th>
+                    <th>REMARKS</th>
+                    <th>STATUS</th>
+                    <th>SCHOLARSHIP STATUS</th>
                     <th>Actions</th>
+
                 </tr>
                 </thead>
                 <tbody>
                 <?php foreach ($tableData as $row): ?>
                     <tr>
-                        <td><?= $row['seq'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['CONTROL NO.'] ?></td>
+                        <td><?= $row['LAST NAME'] ?></td>
+                        <td><?= $row['FIRST NAME'] ?></td>
+                        <td><?= $row['MIDDLE NAME'] ?></td>
+                        <td><?= $row['SEX'] ?></td>
+                        <td><?= $row['BIRTHDATE'] ?></td>
+                        <td><?= $row['COURSE ENROLLED'] ?></td>
+                        <td><?= $row['YEAR LEVEL'] ?></td>
+                        <td><?= $row['HOUSEHOLD NO.'] ?></td>
+                        <td><?= $row['PER CAPITA INCOME'] ?></td>
+                        <td><?= $row['STREET & BRGY.'] ?></td>
+                        <td><?= $row['TOWN'] ?></td>
+                        <td><?= $row['PROVINCE'] ?></td>
+                        <td><?= $row['ZIP CODE'] ?></td>
+                        <td><?= $row['TOTAL ASSESSMENT'] ?></td>
+                        <td><?= $row['GWA'] ?></td>
+                        <td><?= $row['DISABILITY'] ?></td>
+                        <td><?= $row['CONTACT NUMBER'] ?></td>
+                        <td><?= $row['EMAIL ADDRESS'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
+                        <td><?= $row['SEQ'] ?></td>
                         <!-- Repeat similar table cells -->
                         <td>
                             <button class="btn btn-info">Edit</button>

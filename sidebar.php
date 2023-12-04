@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <div class="row">
             <nav class="col-md-2 d-none d-md-block sidebar">
-                <div class="sidebar-sticky">
+                <!-- <div class="sidebar-sticky"> -->
                     <div class="logo">
                         <img src="asset/sfaulogo.png" style="text-align: center; padding: 5px;">
                         <h4 style="text-align: center;">CNSC SFAU</h4>
@@ -63,7 +63,7 @@
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                </div>
+                <!-- </div> -->
             </nav>
             <!-- Rest of your content -->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">

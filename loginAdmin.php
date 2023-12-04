@@ -20,28 +20,10 @@
                     Login to continue
                 </div>
                 <div class="card-body">
-                    <?php
-                    if (isset($_POST["login"])){
-                        $email = $_POST["email"];
-                        $password = $_POST["password"]; 
-                        require_once("database.php");
-                        $sql = "SELECT * FROM registration WHERE email = '$email'";
-                        $result = mysqli_query($conn, $sql);
-                        $registration = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                        if ($registration){
-                            if (password_verify($password, $registration["password"])) {
-                                header("Location : welcomestud.php");
-                                die();
-                            }
-                        }else{
-                            echo "<div class='alert alert-danger'>Email does not match</div>";
-                        }
-                    }
-                    ?>
                     <form action="login.php" method="post">
                         <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Password:</label>
@@ -49,7 +31,7 @@
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                         </div>
-                        <button type="submit" value="login" name= "login" class="btn btn-primary mx-auto d-block"  style="text-align: center; " >Login</button>
+                        <button type="submit" class="btn btn-primary mx-auto d-block"  style="text-align: center; " >Login</button>
                         <a href="signup.php" class="mx-auto d-block"><u>Sign up?</u></a>
                     </form>
                 </div>
@@ -79,3 +61,25 @@
 
 </body>
 </html>
+<?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get username and password from the form
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    // For simplicity, you can hardcode a username and password here
+    $validUsername = "admin";
+    $validPassword = "password123";
+
+    // Check if the entered credentials are valid
+    if ($username == $validUsername && $password == $validPassword) {
+        // Redirect to a dashboard or home page on successful login
+        header("Location: welcomestud.php");
+        exit();
+    } else {
+        // Display an error message if credentials are invalid
+        echo "Invalid username or password";
+    }
+}
+?>
